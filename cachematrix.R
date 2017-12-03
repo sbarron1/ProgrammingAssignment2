@@ -1,4 +1,7 @@
-##makeCacheMatrix stores a matrix and caches its inverse
+##functions to store a matrix (and it's inverse) and to solve the inverse or
+##retrieve it if alreadt cachd
+
+##makeCacheMatrix stores a matrix and can  cache its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
     s <- NULL
@@ -32,5 +35,4 @@ cacheSolve <- function(x, ...) {
     x$setsolve(s)
     s
 }
-
 
